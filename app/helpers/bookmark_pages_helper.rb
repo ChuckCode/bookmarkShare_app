@@ -1,0 +1,2 @@
+module BookmarkPagesHelper
+end
