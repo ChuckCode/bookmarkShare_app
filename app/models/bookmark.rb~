@@ -1,0 +1,5 @@
+class Bookmark < ActiveRecord::Base
+  attr_accessible :date_saved, :name, :url
+  validates :url, :allow_blank => false, :length => { :minimum => 10 }
+  validates :name, :allow_blank => false, :length => { :maximum => 100 }
+end
